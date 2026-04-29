@@ -1,0 +1,16 @@
+# PHP
+config/config.local.php
+vendor/
+
+# XAMPP / Apache
+.htaccess
+
+# Uploads and User Data
+uploads/*
+!uploads/.gitkeep
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.log

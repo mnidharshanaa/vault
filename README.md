@@ -1,12 +1,11 @@
 # 🏛️ Vault: Personal Knowledge Management System
-
+## Demo
+![Project Demo](assets/demo.gif)
 [![PHP](https://img.shields.io/badge/PHP-7.4+-777BB4.svg?style=flat&logo=php&logoColor=white)](https://www.php.net/)
 [![MySQL](https://img.shields.io/badge/MySQL-v8.0-4479A1.svg?style=flat&logo=mysql&logoColor=white)](https://www.mysql.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **Vault** is a lightweight, self-hosted web application built with PHP and MySQL to help you organize your digital life. Store notes, save important links, and manage your files in one secure, centralized location.
-
----
 
 ## ✨ Key Features
 
@@ -16,15 +15,6 @@
 - **🔍 Quick Search:** Instantly find what you're looking for across all your notes and links.
 - **🌓 Adaptive UI:** Features a sleek, modern dashboard with a focus on usability and mobile responsiveness.
 - **🔒 Secure Auth:** User authentication system with password hashing and session-based security.
-
----
-
-## 🎥 Demo
-
-![Project Demo](demo.mp4)
-
-> [!TIP]
-> To show a video here, simply save your screen recording as `demo.mp4` in this folder. GitHub will render it as a video player!
 
 ---
 
@@ -52,13 +42,13 @@
 3. Import the `database.sql` file provided in the root folder.
 
 ### 3. Configuration
-1. Rename `.env.example` to `.env`.
-2. Update the database credentials in `.env` to match your local setup:
-   ```env
-   DB_HOST=localhost
-   DB_USER=root
-   DB_PASS=your_password
-   DB_NAME=vault_db
+1. Open `config/db.php` in your editor.
+2. Update the database credentials to match your local XAMPP setup:
+   ```php
+   define('DB_HOST', 'localhost');
+   define('DB_USER', 'root');
+   define('DB_PASS', 'your_password');
+   define('DB_NAME', 'vault_db');
    ```
 
 ### 4. Running the App
